@@ -21,7 +21,16 @@ elif day in ("tuesday, wednesday, thursday"):
     print("day type : regular school day - plan a short libray visit")
 else:
     print("day type : day type not recognised please check the spelling")
-    
+
+#part 2 : AND OPERATOR - sunny AND book due
+if weather == "sunny" and book_due =="yes":
+    print("Libray tip : great weather. return your book and borrow a new one")
+
+if weather == "cloudy" or weather == "rainy":
+    print("Weather tip : carry an umbrella if you are going to the school")
+
+if not (book_due == "yes"):
+    print("Book status : no book return needed today")
 
 
 
